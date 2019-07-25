@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# sw-test
 
-You can use the [editor on GitHub](https://github.com/ling2013/ling2013.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Service Worker test repository. This is a very simple demo to show basic service worker features in action. The demo can be seen on [our GitHub pages](https://mdn.github.io/sw-test/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can find a lot more out about how this works by reading [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers).
+In particular, read [Why is my service worker failing to register?](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#Why_is_my_service_worker_failing_to_register)
+if you are having problems getting your code to do anything. You need to change the paths relative to where you are serving your files from!
 
-### Markdown
+# Running locally
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To get this code. running locally on your computer as-is, you need to do the following:
 
-```markdown
-Syntax highlighted code block
+1. Clone the repo in a location on your machine.
+2. Start a local server running in the parent directory of the sw-test directory. For example, if you have Python on your machine you could start a server running on port 8001 using `python -m SimpleHTTPServer 8001` for Python 2.x, or `python3 -m http.server 8001` for Python 3.x.
+3. Navigate to the sw-test directory on the local server, e.g. [http://localhost:8001/sw-test/](http://localhost:8001/sw-test/)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ling2013/ling2013.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Note: The example has to be located under the sw-test directory (e.g. http://localhost:8001/sw-test/) and not at the root of the server (e.g. http://localhost:8001/) or anywhere else, for the service worker to work. It expects the document and associated assets it is controlling to be at this location.
