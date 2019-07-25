@@ -10,7 +10,12 @@ self.addEventListener('install', function(event) {
         '/star-wars-logo.jpg',
         '/gallery/bountyHunters.jpg',
         '/gallery/myLittleVader.jpg',
-        '/gallery/snowTroopers.jpg'
+        '/gallery/snowTroopers.jpg',
+        '/logo.ico',
+        '/logo.svg',
+        '/logo.png',
+        '/logo.webp',
+        '/manifest.json'
       ]);
     })
   );
