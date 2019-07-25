@@ -64,7 +64,7 @@ self.addEventListener('push', function(event) {
     };
 
     event.waitUntil(self.registration.showNotification(title, options));
-}
+})
   self.registration.showNotification('您有新消息', {
       body: 'Hello Service Worker',
       icon: './logo.png',});
