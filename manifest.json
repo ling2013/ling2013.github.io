@@ -34,6 +34,8 @@
       "src": "logo.svg",
       "sizes": "72x72"
     }
-  ]
+  ],
+  "gcm_sender_id": "847244712742",
+  "gcm_user_visible_only": true
 }
 
