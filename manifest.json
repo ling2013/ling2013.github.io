@@ -9,8 +9,8 @@
   "theme_color": "#ace",
   "icons": [
     {
-      "src": "logo.svg",
-      "sizes": "72x72"
+      "src": "logo.png",
+      "sizes": "512x512"
     }
   ],
   "gcm_sender_id": "847244712742",
