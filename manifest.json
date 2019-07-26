@@ -1,39 +1,25 @@
 {
-  "name": "pwa demo",// 必填 显示的插件名称
-  "short_name": "pwa",// 可选  在APP launcher和新的tab页显示，如果没有设置，则使用name
-  "description": "pwa example",
-  //用于描述应用
+  "name": "Progressive Web App",
+  "short_name": "Demo PWA",
+  "description": "Demo for progressive web app with push notifications, background sync etc.",
   "start_url": "./index.html",
-  //应用启动时的url
   "display": "standalone",
-  // 定义开发人员对Web应用程序的首选显示模式。standalone模式会有单独的
-  "background_color": "#ace",
-  // 桌面图标的背景色
-  "theme_color": "#ace",
-  // 为web应用程序预定义的背景颜色。在启动web应用程序和加载应用程序的内容之间创建了一个平滑的过渡。
+  "orientation": "portrait",
+  "background_color": "#f5f5f5",
+  "theme_color": "#29434d",
   "icons": [
-    //桌面图标，是一个数组
     {
-      "src": "logo.webp",
-      "sizes": "48x48",
-      // 以空格分隔的图片尺寸
-      "type": "image/webp"
-      // 帮助userAgent快速排除不支持的类型
-    },
-    {
-      "src": "logo.ico",
-      "sizes": "48x48"
-    },
-    {
-      "src": "logo.ico",
-      "sizes": "128x128"
-    },
-    {
-      "src": "logo.svg",
-      "sizes": "72x72"
+      "src": "./logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
+  "author": {
+    "name": "Gokulakrishnan Kalaikovan",
+    "website": "https://gokulkrishh.github.io",
+    "github": "https://github.com/gokulkrishh",
+    "source-repo": "https://github.com/gokulkrishh/demo-progressive-web-app"
+  },
   "gcm_sender_id": "847244712742",
   "gcm_user_visible_only": true
 }
-
