@@ -1,11 +1,9 @@
 {
-  "name": "pwa demo",
-  // 必填 显示的插件名称
-  "short_name": "pwa",
-  // 可选  在APP launcher和新的tab页显示，如果没有设置，则使用name
+  "name": "pwa demo",// 必填 显示的插件名称
+  "short_name": "pwa",// 可选  在APP launcher和新的tab页显示，如果没有设置，则使用name
   "description": "pwa example",
   //用于描述应用
-  "start_url": "index.html",
+  "start_url": "./index.html",
   //应用启动时的url
   "display": "standalone",
   // 定义开发人员对Web应用程序的首选显示模式。standalone模式会有单独的
