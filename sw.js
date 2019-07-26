@@ -46,25 +46,6 @@ self.addEventListener('fetch', function(event) {
 });
 
 
-self.addEventListener('notificationclick', function(event) {
-    // 关闭当前的弹窗
-    event.notification.close();
-    // 在新窗口打开页面
-    event.waitUntil(
-        clients.openWindow('https://baidu.com')
-    );
-});
 
 
-self.addEventListener('push', function(event) {
-    const title = event.data.text();
-    const options = {
-        body: event.data.text(),
-        icon: './logo.png',
-    };
 
-    event.waitUntil(self.registration.showNotification(title, options));
-})
-  self.registration.showNotification('您有新消息', {
-      body: 'Hello Service Worker',
-      icon: './logo.png',});
